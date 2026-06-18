@@ -430,15 +430,8 @@
                 <mxCell id="edge_2" value="" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="c0" target="c2" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge_3" value="" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.001;entryY=0.246;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="c4_s22" edge="1">
-                    <mxGeometry width="50" relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="260" y="80"/>
-                            <mxPoint x="260" y="122"/>
-                        </Array>
-                        <mxPoint x="430" y="80" as="sourcePoint"/>
-                        <mxPoint x="300" y="130" as="targetPoint"/>
-                    </mxGeometry>
+                <mxCell id="edge_3" value="" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="c3" target="c4" edge="1">
+                    <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="l117" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10" parent="edge_3" vertex="1" connectable="0">
                     <mxGeometry x="-0.9" y="-1" relative="1" as="geometry">
@@ -701,16 +694,8 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="edge_23" value="" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=1.011;entryY=0.102;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="c15" edge="1">
-                    <mxGeometry width="50" relative="1" as="geometry">
-                        <mxPoint x="310" y="320.0034782608696" as="sourcePoint"/>
-                        <mxPoint x="1040" y="1020.96" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="1180" y="320"/>
-                            <mxPoint x="1180" y="1021"/>
-                            <mxPoint x="982" y="1021"/>
-                        </Array>
-                    </mxGeometry>
+                <mxCell id="edge_23" value="" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="c1" target="c15" edge="1">
+                    <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="l157" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10" parent="edge_23" vertex="1" connectable="0">
                     <mxGeometry x="-0.9" y="-1" relative="1" as="geometry">
