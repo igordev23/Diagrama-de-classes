@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2" pages="1">
+  <diagram name="DER - Sistema de Certificados" id="der-sistema-certificados">
+    <mxGraphModel dx="942" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ==================== ENTIDADES ==================== -->
+
+        <!-- PESSOA -->
+        <mxCell id="e_pessoa" value="PESSOA (abstract)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450" parent="1" vertex="1">
+          <mxGeometry x="570" y="20" width="160" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_pessoa_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1"><mxGeometry y="26" width="160" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_pessoa_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1"><mxGeometry y="52" width="160" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_pessoa_a3" value="email (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1"><mxGeometry y="78" width="160" height="26" as="geometry"/></mxCell>
+
+        <!-- USUARIO -->
+        <mxCell id="e_usuario" value="USUARIO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#ffe6cc;strokeColor=#d79b00" parent="1" vertex="1">
+          <mxGeometry x="370" y="180" width="170" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_usuario_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_usuario" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_usuario_a2" value="perfil (PerfilEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_usuario" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_usuario_a3" value="ultimoLogin (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_usuario" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_usuario_a4" value="horarioPermitidoInicio (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_usuario" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- PARTICIPANTE -->
+        <mxCell id="e_participante" value="PARTICIPANTE" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#ffe6cc;strokeColor=#d79b00" parent="1" vertex="1">
+          <mxGeometry x="760" y="180" width="170" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_participante_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_participante_a2" value="cpf (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_participante_a3" value="dataCadastro (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- ORGANIZACAO -->
+        <mxCell id="e_organizacao" value="ORGANIZACAO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656" parent="1" vertex="1">
+          <mxGeometry x="570" y="380" width="170" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_organizacao_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_organizacao_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_organizacao_a3" value="cnpj (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_organizacao_a4" value="ativo (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- USUARIO_ORGANIZACAO -->
+        <mxCell id="e_uo" value="USUARIO_ORGANIZACAO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656" parent="1" vertex="1">
+          <mxGeometry x="100" y="400" width="170" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_uo_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_uo" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_uo_a2" value="perfil (PerfilEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_uo" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- CONFIGURACAO_SISTEMA -->
+        <mxCell id="e_config" value="CONFIGURACAO_SISTEMA" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656" parent="1" vertex="1">
+          <mxGeometry x="840" y="380" width="170" height="182" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_config_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_config" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_config_a2" value="envioAutomatico (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_config" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_config_a3" value="regraReemissao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_config" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_config_a4" value="mensagemPadraoEmail (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_config" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_config_a5" value="termosUso (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_config" vertex="1"><mxGeometry y="130" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_config_a6" value="sistemaOnline (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_config" vertex="1"><mxGeometry y="156" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- CURSO -->
+        <mxCell id="e_curso" value="CURSO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf" parent="1" vertex="1">
+          <mxGeometry x="320" y="600" width="170" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_curso_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_curso_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_curso_a3" value="cargaHoraria (int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_curso_a4" value="descricao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- PARTICIPANTE_CURSO (associativa) -->
+        <mxCell id="e_pc" value="PARTICIPANTE_CURSO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf" parent="1" vertex="1">
+          <mxGeometry x="600" y="620" width="170" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_pc_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pc" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_pc_a2" value="dataVinculo (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pc" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- TEMPLATE -->
+        <mxCell id="e_template" value="TEMPLATE" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366" parent="1" vertex="1">
+          <mxGeometry x="870" y="600" width="170" height="182" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_template_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_template_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_template_a3" value="tipoArquivo (TipoArquivoEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_template_a4" value="caminhoArquivo (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_template_a5" value="versao (int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1"><mxGeometry y="130" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_template_a6" value="ativo (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1"><mxGeometry y="156" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- CAMPO_DINAMICO -->
+        <mxCell id="e_campo" value="CAMPO_DINAMICO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366" parent="1" vertex="1">
+          <mxGeometry x="1120" y="600" width="170" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_campo_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_campo" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_campo_a2" value="nomeCampo (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_campo" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_campo_a3" value="marcador (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_campo" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- TEMPLATE_VERSAO -->
+        <mxCell id="e_tv" value="TEMPLATE_VERSAO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366" parent="1" vertex="1">
+          <mxGeometry x="870" y="820" width="170" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_tv_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tv" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_tv_a2" value="versao (int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tv" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_tv_a3" value="arquivoPath (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tv" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- ASSINATURA_DIGITAL -->
+        <mxCell id="e_assinatura" value="ASSINATURA_DIGITAL" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366" parent="1" vertex="1">
+          <mxGeometry x="1120" y="830" width="170" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_assinatura_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_assinatura" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_assinatura_a2" value="imagemAssinatura (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_assinatura" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_assinatura_a3" value="hashVerificacao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_assinatura" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- CERTIFICADO -->
+        <mxCell id="e_certificado" value="CERTIFICADO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#e1d5e7;strokeColor=#9673a6" parent="1" vertex="1">
+          <mxGeometry x="590" y="1060" width="170" height="208" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_certificado_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_certificado_a2" value="codigoUnico (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_certificado_a3" value="dataEmissao (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_certificado_a4" value="localEmissao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_certificado_a5" value="status (StatusCertificadoEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="130" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_certificado_a6" value="arquivoPDF (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="156" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_certificado_a7" value="qrCode (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1"><mxGeometry y="182" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- ENVIO_EMAIL -->
+        <mxCell id="e_envio" value="ENVIO_EMAIL" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#e1d5e7;strokeColor=#9673a6" parent="1" vertex="1">
+          <mxGeometry x="830" y="1060" width="170" height="182" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_envio_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_envio" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_envio_a2" value="destinatario (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_envio" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_envio_a3" value="status (StatusEnvioEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_envio" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_envio_a4" value="tentativas (int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_envio" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_envio_a5" value="dataEnvio (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_envio" vertex="1"><mxGeometry y="130" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_envio_a6" value="mensagemPersonalizada (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_envio" vertex="1"><mxGeometry y="156" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- LOG -->
+        <mxCell id="e_log" value="LOG" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#b1ddf0;strokeColor=#10739e" parent="1" vertex="1">
+          <mxGeometry x="100" y="1380" width="170" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_log_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_log" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_log_a2" value="tipo (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_log" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_log_a3" value="descricao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_log" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_log_a4" value="dataHora (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_log" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- LOG_AUDITORIA -->
+        <mxCell id="e_logaud" value="LOG_AUDITORIA" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#b1ddf0;strokeColor=#10739e" parent="1" vertex="1">
+          <mxGeometry x="330" y="1380" width="170" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_logaud_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_logaud_a2" value="acao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_logaud_a3" value="dataHora (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- SESSAO -->
+        <mxCell id="e_sessao" value="SESSAO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#b1ddf0;strokeColor=#10739e" parent="1" vertex="1">
+          <mxGeometry x="560" y="1380" width="170" height="104" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_sessao_a1" value="PK: tokenHash (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_sessao" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_sessao_a2" value="ipAddress (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_sessao" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_sessao_a3" value="ativo (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_sessao" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- CHAMADO_SUPORTE -->
+        <mxCell id="e_chamado" value="CHAMADO_SUPORTE" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#b1ddf0;strokeColor=#10739e" parent="1" vertex="1">
+          <mxGeometry x="100" y="1560" width="170" height="182" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_chamado_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_chamado" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_chamado_a2" value="titulo (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_chamado" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_chamado_a3" value="descricao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_chamado" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_chamado_a4" value="dataAbertura (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_chamado" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_chamado_a5" value="status (StatusChamadoEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_chamado" vertex="1"><mxGeometry y="130" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_chamado_a6" value="dataFechamento (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_chamado" vertex="1"><mxGeometry y="156" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- FILA_PROCESSAMENTO -->
+        <mxCell id="e_fila" value="FILA_PROCESSAMENTO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#b1ddf0;strokeColor=#10739e" parent="1" vertex="1">
+          <mxGeometry x="560" y="1560" width="170" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_fila_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_fila" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_fila_a2" value="tipoAcao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_fila" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_fila_a3" value="status (StatusFilaEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_fila" vertex="1"><mxGeometry y="78" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_fila_a4" value="prioridade (int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_fila" vertex="1"><mxGeometry y="104" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- IMPORTACAO -->
+        <mxCell id="e_import" value="IMPORTACAO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#b1ddf0;strokeColor=#10739e" parent="1" vertex="1">
+          <mxGeometry x="830" y="1560" width="170" height="78" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_import_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_import" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry"/></mxCell>
+        <mxCell id="e_import_a2" value="nomeArquivo (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_import" vertex="1"><mxGeometry y="52" width="170" height="26" as="geometry"/></mxCell>
+
+        <!-- ==================== RELACIONAMENTOS (Notação Pé-de-Galinha) ==================== -->
+
+        <!-- PESSOA → USUARIO (generalização) -->
+        <mxCell id="r_pessoa_usuario" value="" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_pessoa" target="e_usuario" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PESSOA → PARTICIPANTE (generalização) -->
+        <mxCell id="r_pessoa_participante" value="" style="endArrow=block;endSize=12;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_pessoa" target="e_participante" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → USUARIO_ORGANIZACAO (1,N) -->
+        <mxCell id="r_org_uo" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_uo" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USUARIO → USUARIO_ORGANIZACAO (1:N) -->
+        <mxCell id="r_usuario_uo" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_usuario" target="e_uo" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → CURSO (1:N) -->
+        <mxCell id="r_org_curso" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_curso" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → TEMPLATE (1:N) -->
+        <mxCell id="r_org_template" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_template" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → CONFIGURACAO_SISTEMA (1:1) -->
+        <mxCell id="r_org_config" value="" style="startArrow=ERone;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_config" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → CERTIFICADO (1:N) -->
+        <mxCell id="r_org_certificado" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_certificado" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → CHAMADO_SUPORTE (1:N) -->
+        <mxCell id="r_org_chamado" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_chamado" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → FILA_PROCESSAMENTO (1:N) -->
+        <mxCell id="r_org_fila" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_fila" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORGANIZACAO → IMPORTACAO (1:N) -->
+        <mxCell id="r_org_import" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_organizacao" target="e_import" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- CURSO → PARTICIPANTE_CURSO (1:N) -->
+        <mxCell id="r_curso_pc" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_curso" target="e_pc" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PARTICIPANTE → PARTICIPANTE_CURSO (1:N) -->
+        <mxCell id="r_part_pc" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_participante" target="e_pc" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- TEMPLATE → CAMPO_DINAMICO (composição - losango + pé-de-galinha) -->
+        <mxCell id="r_template_campo" value="" style="startArrow=diamondThin;startFill=1;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;startSize=14" parent="1" source="e_template" target="e_campo" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- TEMPLATE → TEMPLATE_VERSAO (1:N) -->
+        <mxCell id="r_template_tv" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_template" target="e_tv" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- TEMPLATE → ASSINATURA_DIGITAL (1:0..1) -->
+        <mxCell id="r_template_assinatura" value="" style="startArrow=ERone;endArrow=ERzeroToOne;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_template" target="e_assinatura" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- CERTIFICADO → ENVIO_EMAIL (1:N) -->
+        <mxCell id="r_certificado_envio" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_certificado" target="e_envio" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- CERTIFICADO → ASSINATURA_DIGITAL (assinadoCom) (N:1) -->
+        <mxCell id="r_certificado_assinatura" value="assinadoCom" style="startArrow=ERmany;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_certificado" target="e_assinatura" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- CERTIFICADO → TEMPLATE (N:1) -->
+        <mxCell id="r_certificado_template" value="" style="startArrow=ERmany;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_certificado" target="e_template" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PARTICIPANTE → CERTIFICADO (1:N) -->
+        <mxCell id="r_part_certificado" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_participante" target="e_certificado" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- CURSO → CERTIFICADO (1:N) -->
+        <mxCell id="r_curso_certificado" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_curso" target="e_certificado" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USUARIO → CERTIFICADO (emitiu) (1:N) -->
+        <mxCell id="r_usuario_certificado" value="emitiu" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_usuario" target="e_certificado" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USUARIO → LOG (1:N) -->
+        <mxCell id="r_usuario_log" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_usuario" target="e_log" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USUARIO → LOG_AUDITORIA (1:N) -->
+        <mxCell id="r_usuario_logaud" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_usuario" target="e_logaud" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USUARIO → SESSAO (1:N) -->
+        <mxCell id="r_usuario_sessao" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_usuario" target="e_sessao" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USUARIO → CHAMADO_SUPORTE (abriu) (1:N) -->
+        <mxCell id="r_usuario_chamado" value="abriu" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle" parent="1" source="e_usuario" target="e_chamado" edge="1">
+          <mxGeometry width="50" relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
