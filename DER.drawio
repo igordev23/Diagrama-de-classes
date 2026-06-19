@@ -10,10 +10,10 @@
                 <mxCell id="e_pessoa_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
                     <mxGeometry y="26" width="160" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_pessoa_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
+                <mxCell id="e_pessoa_a2" value="nome (String) [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
                     <mxGeometry y="52" width="160" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_pessoa_a3" value="email (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
+                <mxCell id="e_pessoa_a3" value="email (String) [UNIQUE] [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
                     <mxGeometry y="78" width="160" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_pessoa_a4" value="ativo (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
@@ -43,7 +43,7 @@
                 <mxCell id="e_participante_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_participante_a2" value="cpf (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1">
+                <mxCell id="e_participante_a2" value="cpf (String) [UNIQUE]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_participante_a3" value="dataCadastro (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_participante" vertex="1">
@@ -55,10 +55,10 @@
                 <mxCell id="e_organizacao_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_organizacao_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
+                <mxCell id="e_organizacao_a2" value="nome (String) [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_organizacao_a3" value="cnpj (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
+                <mxCell id="e_organizacao_a3" value="cnpj (String) [UNIQUE]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_organizacao_a4" value="ativo (Boolean)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
@@ -100,10 +100,10 @@
                 <mxCell id="e_curso_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_curso_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
+                <mxCell id="e_curso_a2" value="nome (String) [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_curso_a3" value="cargaHoraria (int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
+                <mxCell id="e_curso_a3" value="cargaHoraria (int) [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_curso_a4" value="descricao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
@@ -127,7 +127,7 @@
                 <mxCell id="e_template_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_template_a2" value="nome (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1">
+                <mxCell id="e_template_a2" value="nome (String) [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_template_a3" value="tipoArquivo (TipoArquivoEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_template" vertex="1">
@@ -205,16 +205,16 @@
                 <mxCell id="e_certificado_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_certificado_a2" value="codigoUnico (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
+                <mxCell id="e_certificado_a2" value="codigoUnico (String) [UNIQUE] [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_certificado_a3" value="dataEmissao (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
+                <mxCell id="e_certificado_a3" value="dataEmissao (DateTime) [NN] [IDX]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_certificado_a4" value="localEmissao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
                     <mxGeometry y="104" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_certificado_a5" value="status (StatusCertificadoEnum)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
+                <mxCell id="e_certificado_a5" value="status (StatusCertificadoEnum) [NN]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
                     <mxGeometry y="130" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_certificado_a6" value="arquivoPDF (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_certificado" vertex="1">
@@ -271,7 +271,7 @@
                 <mxCell id="e_logaud_a2" value="acao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_logaud_a3" value="dataHora (DateTime)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1">
+                <mxCell id="e_logaud_a3" value="dataHora (DateTime) [IDX]" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1">
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_logaud_a4" value="local (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_logaud" vertex="1">
@@ -518,6 +518,9 @@
                             <mxPoint x="770" y="350"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="legend_box" value="&lt;b&gt;Legenda de Constraints&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;[PK]&lt;/b&gt; Chave Primária&lt;br&gt;&lt;b&gt;[UNIQUE]&lt;/b&gt; Chave Única (código único, CPF, e-mail, CNPJ)&lt;br&gt;&lt;b&gt;[NN]&lt;/b&gt; NOT NULL (campos obrigatórios)&lt;br&gt;&lt;b&gt;[IDX]&lt;/b&gt; Índice recomendado para consultas frequentes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontStyle=0;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="50" width="280" height="140" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
