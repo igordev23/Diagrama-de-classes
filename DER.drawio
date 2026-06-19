@@ -519,9 +519,6 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="legend_box" value="&lt;b&gt;Legenda de Constraints&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;[PK]&lt;/b&gt; Chave Primária&lt;br&gt;&lt;b&gt;[UNIQUE]&lt;/b&gt; Chave Única (código único, CPF, e-mail, CNPJ)&lt;br&gt;&lt;b&gt;[NN]&lt;/b&gt; NOT NULL (campos obrigatórios)&lt;br&gt;&lt;b&gt;[IDX]&lt;/b&gt; Índice recomendado para consultas frequentes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontStyle=0;fontSize=11;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8" parent="1" vertex="1">
-                    <mxGeometry x="1220" y="50" width="280" height="140" as="geometry"/>
-                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
