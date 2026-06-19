@@ -458,6 +458,23 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="r_org_pessoa" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" parent="1" source="e_organizacao" target="e_pessoa" edge="1">
+                    <mxGeometry width="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_org_log" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" parent="1" source="e_organizacao" target="e_log" edge="1">
+                    <mxGeometry width="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="300" y="450"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="r_org_logaud" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" parent="1" source="e_organizacao" target="e_logaud" edge="1">
+                    <mxGeometry width="50" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="770" y="350"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
