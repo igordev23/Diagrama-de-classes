@@ -448,7 +448,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="r_certificado_assinatura" value="assinadoCom" style="startArrow=ERmany;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#9673a6" parent="1" source="e_certificado" target="e_assinatura" edge="1">
+                <mxCell id="r_certificado_assinatura" value="assinadoCom" style="startArrow=ERone;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#9673a6" parent="1" source="e_certificado" target="e_assinatura" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="860" y="750"/>
