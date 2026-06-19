@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e" pages="1">
     <diagram name="DER - Sistema de Certificados" id="der-sistema-certificados">
-        <mxGraphModel dx="866" dy="201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="785" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="e_pessoa" value="PESSOA (abstract)" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450" parent="1" vertex="1">
-                    <mxGeometry x="550" y="90" width="160" height="104" as="geometry"/>
+                    <mxGeometry x="230" y="60" width="160" height="104" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_pessoa_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_pessoa" vertex="1">
                     <mxGeometry y="26" width="160" height="26" as="geometry"/>
@@ -17,7 +17,7 @@
                     <mxGeometry y="78" width="160" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_usuario" value="USUARIO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#ffcccc;strokeColor=#cc6666" parent="1" vertex="1">
-                    <mxGeometry x="300" y="210" width="170" height="130" as="geometry"/>
+                    <mxGeometry x="280" y="250" width="170" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_usuario_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_usuario" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
@@ -44,7 +44,7 @@
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_organizacao" value="ORGANIZACAO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656" parent="1" vertex="1">
-                    <mxGeometry x="770" y="323" width="170" height="130" as="geometry"/>
+                    <mxGeometry x="600" y="60" width="170" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_organizacao_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_organizacao" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
@@ -59,7 +59,7 @@
                     <mxGeometry y="104" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_uo" value="USUARIO_ORGANIZACAO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#fff9e6;strokeColor=#e0c868" parent="1" vertex="1">
-                    <mxGeometry x="100" y="400" width="170" height="78" as="geometry"/>
+                    <mxGeometry x="400" y="73" width="170" height="78" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_uo_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_uo" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
@@ -89,7 +89,7 @@
                     <mxGeometry y="156" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_curso" value="CURSO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf" parent="1" vertex="1">
-                    <mxGeometry x="320" y="600" width="170" height="130" as="geometry"/>
+                    <mxGeometry x="390" y="594" width="170" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_curso_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_curso" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
@@ -169,13 +169,13 @@
                 <mxCell id="e_assinatura_a3" value="hashVerificacao (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_assinatura" vertex="1">
                     <mxGeometry y="78" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_valorcampo" value="VALOR_CAMPO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f0f4c3;strokeColor=#9e9d24" vertex="1" parent="1">
+                <mxCell id="e_valorcampo" value="VALOR_CAMPO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f0f4c3;strokeColor=#9e9d24" parent="1" vertex="1">
                     <mxGeometry x="1120" y="1060" width="170" height="78" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_valorcampo_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" vertex="1" parent="e_valorcampo">
+                <mxCell id="e_valorcampo_a1" value="PK: id (UUID)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_valorcampo" vertex="1">
                     <mxGeometry y="26" width="170" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="e_valorcampo_a2" value="valor (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" vertex="1" parent="e_valorcampo">
+                <mxCell id="e_valorcampo_a2" value="valor (String)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_valorcampo" vertex="1">
                     <mxGeometry y="52" width="170" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="e_certificado" value="CERTIFICADO" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#e1d5e7;strokeColor=#9673a6" parent="1" vertex="1">
@@ -346,7 +346,7 @@
                 <mxCell id="r_part_pc" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d46a7a" parent="1" source="e_participante" target="e_pc" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="r_matricula_certificado" value="" style="startArrow=ERone;endArrow=ERzeroToOne;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#5b7fa8" edge="1" parent="1" source="e_pc" target="e_certificado">
+                <mxCell id="r_matricula_certificado" value="" style="startArrow=ERone;endArrow=ERzeroToOne;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#5b7fa8" parent="1" source="e_pc" target="e_certificado" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="r_template_campo" value="" style="startArrow=diamondThin;startFill=1;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;startSize=14;strokeColor=#82b366" parent="1" source="e_template" target="e_campo" edge="1">
@@ -382,10 +382,10 @@
                 <mxCell id="r_usuario_chamado" value="abriu" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#cc6666" parent="1" source="e_usuario" target="e_chamado" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="r_cert_valorcampo" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#9673a6" edge="1" parent="1" source="e_certificado" target="e_valorcampo">
+                <mxCell id="r_cert_valorcampo" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#9673a6" parent="1" source="e_certificado" target="e_valorcampo" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="r_vc_campo" value="" style="startArrow=ERmany;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#9e9d24" edge="1" parent="1" source="e_valorcampo" target="e_campo">
+                <mxCell id="r_vc_campo" value="" style="startArrow=ERmany;endArrow=ERone;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#9e9d24" parent="1" source="e_valorcampo" target="e_campo" edge="1">
                     <mxGeometry width="50" relative="1" as="geometry"/>
                 </mxCell>
             </root>
