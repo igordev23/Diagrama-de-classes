@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="1">
     <diagram name="DER - Sistema de Certificados" id="der-sistema-certificados">
-        <mxGraphModel dx="725" dy="247" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="1346" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -458,17 +458,28 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="r_org_pessoa" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" parent="1" source="e_organizacao" target="e_pessoa" edge="1">
-                    <mxGeometry width="50" relative="1" as="geometry"/>
+                <mxCell id="r_org_pessoa" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.457;exitY=-0.001;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="e_organizacao" target="e_pessoa">
+                    <mxGeometry width="50" relative="1" as="geometry">
+                        <mxPoint x="675.0000000000002" y="-10.030000000000001" as="sourcePoint"/>
+                        <mxPoint x="380" y="42.00030303030306" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="678" y="50"/>
+                            <mxPoint x="680" y="50"/>
+                            <mxPoint x="680" y="40"/>
+                            <mxPoint x="485" y="40"/>
+                            <mxPoint x="485" y="42"/>
+                            <mxPoint x="350" y="42"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="r_org_log" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" parent="1" source="e_organizacao" target="e_log" edge="1">
+                <mxCell id="r_org_log" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" edge="1" parent="1" source="e_organizacao" target="e_log">
                     <mxGeometry width="50" relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="300" y="450"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="r_org_logaud" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" parent="1" source="e_organizacao" target="e_logaud" edge="1">
+                <mxCell id="r_org_logaud" value="" style="startArrow=ERone;endArrow=ERmany;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#d6b656" edge="1" parent="1" source="e_organizacao" target="e_logaud">
                     <mxGeometry width="50" relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="770" y="350"/>
