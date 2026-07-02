@@ -1,0 +1,77 @@
+<mxfile host="65bd71144e" pages="1">
+    <diagram name="DER MVP" id="der-mvp">
+        <mxGraphModel dx="1346" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="e_cert" value="CERTIFICADOS" style="swimlane;fontSize=24;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#e1d5e7;strokeColor=#9673a6" parent="1" vertex="1">
+                    <mxGeometry x="50" y="80" width="430" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a100" value="PK: id (UUID)" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="40" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a101" value="recipientName (varchar 200) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="80" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a102" value="recipientCPF (varchar 11) [NN] [IDX]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="120" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a103" value="courseName (varchar 300) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="160" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a104" value="courseHours (integer) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="200" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a105" value="verificationCode (varchar 8) [UNIQUE] [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="240" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a106" value="validityDate (timestamptz) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="280" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a107" value="FK: templateId (UUID) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="320" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a108" value="issuedAt (timestamptz) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="360" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a109" value="createdAt (timestamptz) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="400" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cert_a110" value="updatedAt (timestamptz) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_cert" vertex="1">
+                    <mxGeometry y="440" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl" value="TEMPLATES" style="swimlane;fontSize=24;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366" parent="1" vertex="1">
+                    <mxGeometry x="770" y="70" width="300" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_a111" value="PK: id (UUID)" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tpl" vertex="1">
+                    <mxGeometry y="40" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_a112" value="name (varchar 100) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tpl" vertex="1">
+                    <mxGeometry y="80" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_a113" value="description (text)" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tpl" vertex="1">
+                    <mxGeometry y="120" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_a114" value="layoutConfig (jsonb)" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tpl" vertex="1">
+                    <mxGeometry y="160" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_a115" value="createdAt (timestamptz) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tpl" vertex="1">
+                    <mxGeometry y="200" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_tpl_a116" value="updatedAt (timestamptz) [NN]" style="text;fontSize=21;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest" parent="e_tpl" vertex="1">
+                    <mxGeometry y="240" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="r_cert_tpl" value="" style="endArrow=ERone;endSize=24;endFill=0;startArrow=ERmany;startSize=24;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=4;fillColor=none;strokeColor=#9673a6" parent="1" edge="1">
+                    <mxGeometry width="50" relative="1" as="geometry">
+                        <mxPoint x="480" y="307" as="sourcePoint"/>
+                        <mxPoint x="770" y="200" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="580" y="307"/>
+                            <mxPoint x="580" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
